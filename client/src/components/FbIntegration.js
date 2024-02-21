@@ -6,13 +6,9 @@ import {
   MDBCol,
   MDBCard,
   MDBCardBody,
-  // MDBInput,
-  // MDBIcon,
-  // MDBCheckbox
 }
 from 'mdb-react-ui-kit';
 import './FbIntegration.css'
-// import { Link } from 'react-router-dom';
 
 function FbIntegration() {
   return (
@@ -31,7 +27,6 @@ function FbIntegration() {
               <MDBBtn size='lg'>
                 Connect Page
               </MDBBtn>
-              {/* <p className='mt-4 text-center'>New to MyApp? <span><Link to="/">Sign Up </Link></span></p> */}
 
             </MDBCardBody>
           </MDBCard>

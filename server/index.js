@@ -15,7 +15,7 @@ app.use(cors());
 app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://fb-dm-helpdesk-two.vercel.app"
+    "*"
   );
   res.setHeader(
     "Access-Control-Allow-Methods",

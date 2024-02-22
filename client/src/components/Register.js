@@ -24,7 +24,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://fb-dm-helpdesk-two.vercel.app", {
+      const response = await axios.post("https://fb-dm-helpdesk-goc6.vercel.app", {
         name,
         email,
         password,

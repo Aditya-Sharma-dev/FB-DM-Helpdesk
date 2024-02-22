@@ -1,5 +1,5 @@
 const express = require("express");
-const path = require("path");
+const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
-
+app.use(bodyParser.json())
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 

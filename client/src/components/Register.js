@@ -24,10 +24,14 @@ function Register() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://fb-dm-helpdesk-goc6.vercel.app", {
+      const response = await axios.post("http://localhost:3001", {
         name,
         email,
         password,
+      }, {
+        headers: {
+          'Content-Type': 'application/json', // Example header
+        }
       });
       console.log(response.data);
 

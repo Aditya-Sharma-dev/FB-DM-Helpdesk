@@ -23,9 +23,13 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://fb-dm-helpdesk-goc6.vercel.app/login", {
+      const response = await axios.post("http://localhost:3001/login", {
         email,
         password,
+      }, {
+        headers: {
+          'Content-Type': 'application/json', // Example header
+        }
       });
       console.log(response.data);
 

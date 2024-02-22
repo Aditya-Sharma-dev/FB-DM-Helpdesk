@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Col, Row } from "reactstrap";
 import currentUser from "../assets/icon.png";
 import customer from "../assets/icon.png";
-import MessengerCustomerChat from "react-messenger-customer-chat";
+// import MessengerCustomerChat from "react-messenger-customer-chat";
 
 function Chat({ chatId = null, currentUserId = null, currentCustomer = null }) {
   const [conversation, setConversations] = useState([]);
@@ -40,11 +40,11 @@ function Chat({ chatId = null, currentUserId = null, currentCustomer = null }) {
 
   return (
     <div className="containers chatContainer">
-      <MessengerCustomerChat
+      {/* <MessengerCustomerChat
         pageId="61556751687716"
         appId="1836900123429517"
         // htmlRef="<REF_STRING>"
-      />
+      /> */}
       <div className="chatUserName">
         <h3>{currentCustomer?.name} Amit RG</h3>
         {/* <button onClick={fetchChats} className="refreshBtn">

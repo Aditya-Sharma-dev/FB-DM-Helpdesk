@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "clientName": "Amit RG",
+      "msgType": "Facebook DM",
+      "time": "10m",
+      "subject": "Awesome Product",
+      "msg": "Hey there! I probably did one of the"
+    },
+    {
+        "id": "2",
+        "clientName": "Hiten Saxena",
+        "msgType": "Facebook Post",
+        "time": "10m",
+        "subject": "Available in store?",
+        "msg": "Hi do you have any T-Shirt"
+      }
+  ]
+}

@@ -43,10 +43,10 @@ export const notification = (message, error = false) => {
     }
   }
 
-  const getItem = (item) =>{
-     localStorage.getItem(item);
-  }
+  // const getItem = (item) =>{
+  //    localStorage.getItem(item);
+  // }
 
-  const setItem = (item,value) => {
-    localStorage.setItem(item,value);
-  }
+  // const setItem = (item,value) => {
+  //   localStorage.setItem(item,value);
+  // }

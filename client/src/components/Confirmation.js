@@ -1,25 +1,22 @@
 import React from "react";
 import {
+  MDBBtn,
   MDBContainer,
   MDBRow,
   MDBCol,
   MDBCard,
   MDBCardBody,
 } from "mdb-react-ui-kit";
-import "./FbIntegration.css";
-import { FacebookProvider, LoginButton } from "react-facebook";
 import { useNavigate } from "react-router-dom";
 
-function FbIntegration() {
+function Confirmation() {
   const history = useNavigate();
 
-  function handleSuccess(response) {
-    history("/confirmation");
-    console.log(response.status);
+  function redirect() {
+    history("/chats");
   }
-
-  function handleError(error) {
-    console.log(error);
+  function goBack() {
+    history("/fb");
   }
 
   return (
@@ -37,22 +34,12 @@ function FbIntegration() {
               <p className="text-white-50 mb-3">
                 Please enter your login and password!
               </p>
-              <FacebookProvider appId="1836900123429517">
-                <LoginButton
-                  scope="email"
-                  onError={handleError}
-                  onSuccess={handleSuccess}
-                  style={{
-                    backgroundColor: "#425cf0",
-                    borderRadius: "5px",
-                    color: "white",
-                    fontWeight: "bold",
-                  }}
-                >
-                  Connect Page
-                </LoginButton>
-              </FacebookProvider>
-              {/* <MDBBtn size="lg">Connect Page</MDBBtn> */}
+              <MDBBtn size="lg mb-2" color="danger" onClick={goBack}>
+                Delete Integration
+              </MDBBtn>
+              <MDBBtn size="lg" onClick={redirect}>
+                Reply to Messages
+              </MDBBtn>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -61,4 +48,4 @@ function FbIntegration() {
   );
 }
 
-export default FbIntegration;
+export default Confirmation;

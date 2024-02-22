@@ -16,7 +16,7 @@ app.use(cors());
 // app.use(express.static(path.join(__dirname, 'client')));
 
 mongoose
-  .connect("mongodb://localhost:27017/dummy", {
+  .connect("mongodb+srv://Aditya:adi123@atlascluster.c0lry2y.mongodb.net/dummy", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

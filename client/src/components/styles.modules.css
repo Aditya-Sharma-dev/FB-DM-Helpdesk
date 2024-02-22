@@ -4,6 +4,7 @@
     padding: 12px !important;
     cursor: pointer !important;
     padding-left: 23px !important;
+    
 }
 .checkBox{
     display: flex;
@@ -112,11 +113,11 @@
     
 }
 .customerDetails{
-    padding: 10px;
+    padding: 5px;
     background: #fff;
     margin-top: 10px;
     border-radius: 10px;
-    margin:20px 14px !important;
+    margin:20px 5px !important;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
